@@ -9,3 +9,7 @@ Example usage:  `./ggT3 123456 432`
 
 ### bin2gray.c
 Tiny program to calculate a **Cyclic gray code**.<br/>
+
+### lfsr.c
+Simple program to demonstrate how to create a PRBS (**Pseudo random binary sequence**) using a **Maximum length sequence**
+16-bit register with Galois LFSR architecture having 4 feedback taps and a period of 65535 clock cycles.<br/>
