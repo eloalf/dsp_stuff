@@ -17,7 +17,8 @@ Two files will be created: `lfsr.log` and `lfsr.dat` <br/>
 
 ### gensinb2t.c
 Simple C program to produce a chirped sine wave with cosine shaped amplitude envelope and fixed length of 8192 samples onto `stdout` .<br/>
-Two header lines are prefixed (Sample rate, Number of channels) for easy conversion with `sox` . Requires installation of `sox` . Usage e.g.:<br/>
+Two header lines are prefixed (Sample rate, Number of channels) for easy conversion with `sox` .<br/>
+Requires installation of `sox` . Usage e.g.:<br/>
 `gcc -o gensinb2t gensinb2t.c -lm` <br/>
 `./gensinb2t > chirp.dat` <br/>
 `sox -t dat chirp.dat -r 24000 -c 1 -b 16 chirp.wav` <br/>
