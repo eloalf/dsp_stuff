@@ -14,19 +14,16 @@
 /*  Spalte 1 = Zeitpunkt des Abtastwertes ab 0.0s                     */
 /*  Spalte 2 = Abtastwert, normalisiert auf +/-1.0                    */
 /*                                                                    */
-/*  Formatumwandlung und Soundausgabe erfordern die Installation von  */
-/*  SoX, ImageMagick                                                  */
-/*                                                                    */
+/*  Formatumwandlung und Soundausgabe erfordern Installation von SoX  */
 /*  Verwendung am Beispiel mit Uebersetzung, Anzeige des Signal-      */
 /*  Maximums, Soundausgabe:                                           */
-/*     gcc -o gensinb2s gensinb2s.c -lm                               */
-/*     ./gensinb2s > sin2.dat                                         */
+/*     gcc -o gensinb2t gensinb2t.c -lm                               */
+/*     ./gensinb2t > sin2.dat                                         */
 /*     head -n 4092 sin2.dat | tail -n 40                             */
 /*     sox -t dat sin2.dat -r 24000 -c 1 -b 16 sin2.wav               */
 /*     play sin2.wav                                                  */
 /*                                                                    */
 /*  Hilfe wird ausgegeben bei Aufruf mit beliebigem Argument.         */
-/*  Status: LAUFFAEHIG                                                */
 
 #include <stdio.h>
 #include <math.h>
