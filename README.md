@@ -24,4 +24,4 @@ Requires installation of `sox` . Usage e.g.:<br/>
 `sox -t dat chirp.dat -r 24000 -c 1 -b 16 chirp.wav` <br/>
 `play chirp.dat` <br/>
 Region of maximum amplitude can be visualized with command<br/>
-`head -n 4092 sin2.dat | tail -n 40` <br/>
+`head -n 4092 chirp.dat | tail -n 40` <br/>
